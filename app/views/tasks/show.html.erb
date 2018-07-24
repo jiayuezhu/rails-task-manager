@@ -1,0 +1,9 @@
+<h1>Task#<%= @task.id %></h1>
+<% if @task.completed == false %>
+  <p>This task if not yet completed</p>
+<% else %>
+  <p>Good Job !</p>
+<% end %>
+
+<%= link_to "Click to Edit", edit_path %>
+<%= link_to "Back to List", tasks_path %>
